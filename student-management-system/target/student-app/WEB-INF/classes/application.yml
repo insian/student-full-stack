@@ -1,0 +1,12 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+  security:
+    user:
+      name: soham
+      password: pass@1234
+server:
+  servlet:
+    context-path: /student-app

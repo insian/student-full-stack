@@ -1,0 +1,4 @@
+com\example\demo\model\Student.class
+com\example\demo\controller\HomeController.class
+com\example\demo\StudentManagementSystemApplication.class
+com\example\demo\ServletInitializer.class

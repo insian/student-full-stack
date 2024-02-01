@@ -41,7 +41,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 	@Override
 	public void deleteEmployee(Integer employeeId) {
 		// TODO Auto-generated method stub
-		
+		employeeRepo.deleteById(employeeId);
 	}
 
 }

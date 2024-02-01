@@ -30,6 +30,10 @@
 						<a th:href="@{/showFormForUpdate(employeeId=${tempEmployee.id})}"
 							class="btn btn-primary btn-sm mb-3">Update</a>
 					</td>
+					<td>
+						<a th:href="@{/delete(employeeId=${tempEmployee.id})}"
+							class="btn btn-primary btn-sm mb-3">Delete</a>
+					</td>
 				</tr>
 			</tbody>
 		</table>

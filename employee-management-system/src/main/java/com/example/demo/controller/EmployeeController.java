@@ -4,6 +4,7 @@ import java.util.Date;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -56,6 +57,12 @@ public class EmployeeController {
 	@PutMapping("/save")
 	public String updateEmployee(@ModelAttribute("employee") Employee employee, Model theModel) {
 		employeeService.updateEmployee(employee);
+		return "redirect:/employees";
+	}
+	
+	@DeleteMapping("/delete")
+	public String delete(@RequestParam Integer employeeId) {
+		employeeService.deleteEmployee(employeeId);
 		return "redirect:/employees";
 	}
 }

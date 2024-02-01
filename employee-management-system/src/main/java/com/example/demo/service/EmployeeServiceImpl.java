@@ -25,4 +25,23 @@ public class EmployeeServiceImpl implements EmployeeService{
 		return employeeRepo.findAll();
 	}
 
+	@Override
+	public Employee findEmployeeById(Integer employeeId) {
+		// TODO Auto-generated method stub
+		//return employeeRepo.findById(employeeId).get();
+		return employeeRepo.getReferenceById(employeeId);
+	}
+
+	@Override
+	public Employee updateEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return employeeRepo.save(employee);
+	}
+
+	@Override
+	public void deleteEmployee(Integer employeeId) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
